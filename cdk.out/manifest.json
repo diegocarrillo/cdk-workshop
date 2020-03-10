@@ -1,0 +1,997 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "workshop": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-1",
+      "properties": {
+        "templateFile": "workshop.template.json"
+      },
+      "metadata": {
+        "/workshop": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb",
+              "id": "240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb",
+              "packaging": "zip",
+              "sourceHash": "240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb",
+              "s3BucketParameter": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebS3Bucket23BDE356",
+              "s3KeyParameter": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebS3VersionKey6A8A4A5D",
+              "artifactHashParameter": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebArtifactHashBDAB0D55"
+            },
+            "trace": [
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:370:23)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681",
+              "id": "ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681",
+              "packaging": "zip",
+              "sourceHash": "ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681",
+              "s3BucketParameter": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681S3Bucket8D949544",
+              "s3KeyParameter": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681S3VersionKeyEFE93F18",
+              "artifactHashParameter": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681ArtifactHashF3868D5D"
+            },
+            "trace": [
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:370:23)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63",
+            "trace": [
+              "new Role (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:41:22)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:60:35)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D",
+            "trace": [
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:71:26)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebS3Bucket23BDE356",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:11:36)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebS3VersionKey6A8A4A5D",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:15:35)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aeb/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters240769a972faf8411751a8b7a4f4d9990d111b05737eb3e6f95ca76bb6a46aebArtifactHashBDAB0D55",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:19:38)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681S3Bucket8D949544",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:11:36)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681S3VersionKeyEFE93F18",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:15:35)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/AssetParameters/ca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersca3eccc24c488dec9a89af5f5d51e4995df9b38d0124369a6442bdd4b1d2b681ArtifactHashF3868D5D",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:19:38)",
+              "Stack.addFileAsset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\core\\lib\\stack.js:360:22)",
+              "new Asset (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:30:32)",
+              "AssetCode.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:135:26)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:68:33)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHitCounter/Hits/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHits7AAEBF80",
+            "trace": [
+              "new Table (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.js:178:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHitCounter/HitCountHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRole42AAF829",
+            "trace": [
+              "new Role (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:41:22)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:60:35)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHitCounter/HitCountHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRoleDefaultPolicy0295D032",
+            "trace": [
+              "new Policy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:30:26)",
+              "Role.addToPolicy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:160:34)",
+              "Function.addToPrincipal (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:57:65)",
+              "Table.grant (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.js:42:26)",
+              "Table.grantReadWriteData (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.js:75:61)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7665:51",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7665:25",
+              "Kernel._ensureSync (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8274:20)",
+              "Kernel.invoke (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7664:26)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/HelloHitCounter/HitCountHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandler2475EAC2",
+            "trace": [
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:71:26)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:31:26)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA2b6842703e50093461475832c504e466",
+            "trace": [
+              "new Deployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.js:40:25)",
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:187:38)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.js:27:26)",
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:195:36)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:199:13)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:41:22)",
+              "LambdaRestApi.configureCloudWatchRole (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:208:22)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:48:18)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:212:26)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:48:18)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:170:26)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:204:9)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.workshopEndpoint961571B6.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionworkshopEndpoint961571B6ANYproxy5D22BADC",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:31:22)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.workshopEndpoint961571B6.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestworkshopEndpoint961571B6ANYproxy6869BE20",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:38:26)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:45:26)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/ANY/ApiPermission.workshopEndpoint961571B6.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionworkshopEndpoint961571B6ANY4BCDCD94",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:31:22)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/ANY/ApiPermission.Test.workshopEndpoint961571B6.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestworkshopEndpoint961571B6ANYC581168F",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:38:26)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:45:26)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/Rendered/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRenderedServiceRole254DB4EA",
+            "trace": [
+              "new Role (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:41:22)",
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:60:35)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/Rendered/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRenderedServiceRoleDefaultPolicy9ADB8C83",
+            "trace": [
+              "new Policy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:30:26)",
+              "Role.addToPolicy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:160:34)",
+              "Function.addToPrincipal (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:57:65)",
+              "Table.grant (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.js:42:26)",
+              "Table.grantReadData (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.js:58:21)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:24:21)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/Rendered/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRendered9C783E45",
+            "trace": [
+              "new Function (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:71:26)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:14:25)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpoint5A0EF326",
+            "trace": [
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:31:26)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointDeployment1CE7C57612649e4d01cf379a6f61e431ac4dcb99",
+            "trace": [
+              "new Deployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.js:40:25)",
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:187:38)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointDeploymentStageprodF3901FC7",
+            "trace": [
+              "new Stage (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.js:27:26)",
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:195:36)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointCA1B1E4B",
+            "trace": [
+              "LambdaRestApi.configureDeployment (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:199:13)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:45:14)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointCloudWatchRole87B94D6A",
+            "trace": [
+              "new Role (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:41:22)",
+              "LambdaRestApi.configureCloudWatchRole (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:208:22)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:48:18)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointAccount0B75E76A",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:212:26)",
+              "new RestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.js:48:18)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:17:9)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxy2F4C239F",
+            "trace": [
+              "new Resource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:170:26)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:204:9)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.workshopViewHitCounterViewerEndpoint83E63AE9.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionworkshopViewHitCounterViewerEndpoint83E63AE9ANYproxy4BA1C4F9",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:31:22)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.workshopViewHitCounterViewerEndpoint83E63AE9.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionTestworkshopViewHitCounterViewerEndpoint83E63AE9ANYproxy7FC8C095",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:38:26)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYFF4B8F5B",
+            "trace": [
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:45:26)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:224:22)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.workshopViewHitCounterViewerEndpoint83E63AE9.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANYApiPermissionworkshopViewHitCounterViewerEndpoint83E63AE9ANY7B0A8710",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:31:22)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.Test.workshopViewHitCounterViewerEndpoint83E63AE9.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANYApiPermissionTestworkshopViewHitCounterViewerEndpoint83E63AE9ANYE2BB7B19",
+            "trace": [
+              "Function.addPermission (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:22:9)",
+              "LambdaIntegration.bind (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.js:38:26)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:88:21)",
+              "Method.renderIntegration (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:83:29)",
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:40:31)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ],
+        "/workshop/ViewHitCounter/ViewerEndpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANY66F2285B",
+            "trace": [
+              "new Method (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.js:45:26)",
+              "RootResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:17:16)",
+              "ProxyResource.addMethod (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:221:37)",
+              "new ProxyResource (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:212:35)",
+              "RootResource.addProxy (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.js:20:16)",
+              "new LambdaRestApi (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.js:23:23)",
+              "new TableViewer (C:\\Users\\DIEGO_~1\\AppData\\Local\\Temp\\jsii-kernel-1Q61KV\\node_modules\\cdk-dynamo-table-viewer\\lib\\table-viewer.js:25:22)",
+              "C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate._onImmediate (C:\\Users\\Diego_Carrillo\\Documents\\PERSONAL\\cdk\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "processImmediate (internal/timers.js:456:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.25.0",
+      "@aws-cdk/core": "1.25.0",
+      "@aws-cdk/region-info": "1.25.0",
+      "@aws-cdk/aws-iam": "1.25.0",
+      "@aws-cdk/aws-cloudwatch": "1.25.0",
+      "@aws-cdk/aws-logs": "1.25.0",
+      "@aws-cdk/aws-events": "1.25.0",
+      "@aws-cdk/aws-kms": "1.25.0",
+      "@aws-cdk/aws-s3": "1.25.0",
+      "@aws-cdk/aws-ssm": "1.25.0",
+      "@aws-cdk/aws-ec2": "1.25.0",
+      "@aws-cdk/assets": "1.25.0",
+      "@aws-cdk/aws-s3-assets": "1.25.0",
+      "@aws-cdk/aws-sqs": "1.25.0",
+      "@aws-cdk/aws-lambda": "1.25.0",
+      "@aws-cdk/aws-sns": "1.25.0",
+      "@aws-cdk/aws-cloudformation": "1.25.0",
+      "@aws-cdk/aws-route53": "1.25.0",
+      "@aws-cdk/aws-certificatemanager": "1.25.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.25.0",
+      "@aws-cdk/aws-apigateway": "1.25.0",
+      "@aws-cdk/aws-autoscaling-common": "1.25.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.25.0",
+      "@aws-cdk/aws-stepfunctions": "1.25.0",
+      "@aws-cdk/aws-ecr": "1.25.0",
+      "@aws-cdk/aws-ecr-assets": "1.25.0",
+      "@aws-cdk/aws-elasticloadbalancing": "1.25.0",
+      "@aws-cdk/aws-autoscaling": "1.25.0",
+      "@aws-cdk/aws-sns-subscriptions": "1.25.0",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.25.0",
+      "@aws-cdk/aws-cloudfront": "1.25.0",
+      "@aws-cdk/aws-route53-targets": "1.25.0",
+      "@aws-cdk/aws-sam": "1.25.0",
+      "@aws-cdk/aws-secretsmanager": "1.25.0",
+      "@aws-cdk/aws-servicediscovery": "1.25.0",
+      "@aws-cdk/aws-ecs": "1.25.0",
+      "@aws-cdk/aws-stepfunctions-tasks": "1.25.0",
+      "@aws-cdk/custom-resources": "1.25.0",
+      "@aws-cdk/aws-dynamodb": "1.25.0",
+      "jsii-runtime": "Python/3.7.4"
+    }
+  }
+}
